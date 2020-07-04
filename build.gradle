@@ -1,3 +1,4 @@
+
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
@@ -5,8 +6,9 @@ buildscript {
     repositories {
         google()
         jcenter()
-
-        
+        maven {
+            url  "https://dl.bintray.com/richa/Phone91_SDK"
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.1'
@@ -20,11 +22,16 @@ buildscript {
 }
 apply plugin: 'com.jfrog.bintray'
 
+
+
 allprojects {
     repositories {
         google()
         jcenter()
-        
+        maven { url 'https://jitpack.io' }
+        maven {
+            url  "https://dl.bintray.com/richa/Phone91_SDK"
+        }
     }
 
 }
