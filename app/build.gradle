@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.phone91.sample"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -22,6 +22,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
 }
@@ -40,7 +45,7 @@ dependencies {
     implementation "androidx.multidex:multidex:$multidex_version"
 
 //     Add this dependency in your application to use SDK
-    implementation 'com.phone91.sdk:library:0.1'
+    implementation 'com.phone91.sdk:library:4.2'
 
 
 }
