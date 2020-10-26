@@ -29,8 +29,16 @@ allprojects {
         google()
         jcenter()
         maven { url 'https://jitpack.io' }
+
+        maven {
+            url "https://rb.gy/5wrmo5"
+        }
         maven {
             url  "https://dl.bintray.com/richa/Phone91_SDK"
+        }
+
+        maven {
+            url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
         }
     }
 
