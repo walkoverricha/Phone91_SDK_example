@@ -1,6 +1,6 @@
 # Phone91_SDK
 Phone91 SDK for Android 
-## Now available with Audio and video call feature
+## Now available with Audio and Video call feature
 
 In order to use it add below dependency in your app level gradle
 
