@@ -2,9 +2,20 @@
 Phone91 SDK for Android 
 ## Now available with Audio and Video call feature
 
+## NEW:  
+can apply these too
+
+    {
+        minifyEnabled true
+        shrinkResources true
+        proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+       
+
 In order to use it add below dependency in your app level gradle
 
     implementation 'com.phone91.sdk:library:4.2' 
+    
    
 
 Add below line in project gradle 

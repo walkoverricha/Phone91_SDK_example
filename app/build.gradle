@@ -19,7 +19,14 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -45,7 +52,7 @@ dependencies {
     implementation "androidx.multidex:multidex:$multidex_version"
 
 //     Add this dependency in your application to use SDK
-    implementation 'com.phone91.sdk:library:4.2'
+    implementation 'com.phone91.sdk:library:4.3'
 
 
 }
